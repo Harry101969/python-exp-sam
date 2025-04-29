@@ -7,3 +7,9 @@ course = 'My name is "Harsh Agarwal!"'
 print(course)
 print(course[9])
 print(course[3:6])  # this will print the index from 3 to 6 but will exclude 6 and will print only uptill 5th index only
+print(course[1:]) #excludes the first character and print the whole string
+print(course[:]) 
+another = course[:]
+print(another)
+name="harry"
+print(name[1:-1])

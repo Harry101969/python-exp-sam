@@ -4,4 +4,8 @@ b = float(input("Enter second number: "))
 print("Addition:", a + b)
 print("Subtraction:", a - b)
 print("Multiplication:", a * b)
-print("Division:", a / b if b != 0 else "Undefined")
+if b==0:
+    print("Division: undefined")
+else:
+   print("Division:", a / b )
+print("Modulous: ",a%b)
