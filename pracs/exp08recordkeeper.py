@@ -1,11 +1,18 @@
 students = []
 
 for i in range(2):
-    name = input("Enter student name: ")
-    roll = int(input("Enter roll number: "))
-    branch = input("Enter branch: ")
-    students.append({'Name': name, 'Roll': roll, 'Branch': branch})
+    name=input("Enter the name: ")
+    roll=int(input("Enter ur roll no: "))
+    branch=input("Enter ur branch: ")
+    students.append({
+     'Name':name,
+     "RollNo":roll,
+     "Branch":branch   
+    })
 
-print("\nStudent Records:")
-for s in students:
-    print(f"Name: {s['Name']}, Roll: {s['Roll']}, Branch: {s['Branch']}")
+print('Students Record')
+students.pop()
+for s in students: 
+    print(f"Name:{s['Name']} , RollNo:{s['RollNo']} , Branch:{s['Branch']}.")
+    
+    
